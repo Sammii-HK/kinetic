@@ -18,6 +18,12 @@ import TextScramble from "./components/TextScramble";
 import CursorTrail from "./components/CursorTrail";
 import ProgressSteps from "./components/ProgressSteps";
 import FloatingDock from "./components/FloatingDock";
+import Typewriter from "./components/Typewriter";
+import NotificationStack from "./components/NotificationStack";
+import SpotlightCard from "./components/SpotlightCard";
+import InfiniteMarquee from "./components/InfiniteMarquee";
+import GravityBalls from "./components/GravityBalls";
+import AnimatedBorder from "./components/AnimatedBorder";
 
 export default function Home() {
   return (
@@ -157,6 +163,48 @@ export default function Home() {
           description="macOS-style dock with proximity-based scale using spring physics."
         >
           <FloatingDock />
+        </DemoCard>
+
+        <DemoCard
+          title="Typewriter"
+          description="Text appears character by character with variable speed and a blinking cursor."
+        >
+          <Typewriter />
+        </DemoCard>
+
+        <DemoCard
+          title="Notification Stack"
+          description="Toast notifications that stack, animate in, and auto-dismiss with layout transitions."
+        >
+          <NotificationStack />
+        </DemoCard>
+
+        <DemoCard
+          title="Spotlight Card"
+          description="A radial gradient that follows your cursor across the card surface."
+        >
+          <SpotlightCard />
+        </DemoCard>
+
+        <DemoCard
+          title="Infinite Marquee"
+          description="Seamlessly looping ticker with configurable speed and direction."
+        >
+          <InfiniteMarquee />
+        </DemoCard>
+
+        <DemoCard
+          title="Gravity Balls"
+          description="Balls that drop and bounce with squash and stretch on impact."
+        >
+          <GravityBalls />
+        </DemoCard>
+
+        <DemoCard
+          title="Animated Border"
+          description="Rotating conic gradient border with colour and speed controls."
+        >
+          <AnimatedBorder />
         </DemoCard>
 
         <DemoCard
