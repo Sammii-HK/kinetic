@@ -5,6 +5,12 @@ import GestureCards from "./components/GestureCards";
 import StaggerReveal from "./components/StaggerReveal";
 import MorphingShapes from "./components/MorphingShapes";
 import ScrollParallax from "./components/ScrollParallax";
+import PathDrawing from "./components/PathDrawing";
+import MagneticHover from "./components/MagneticHover";
+import DragReorder from "./components/DragReorder";
+import FlipCard from "./components/FlipCard";
+import ElasticCounter from "./components/ElasticCounter";
+import AnimatedTabs from "./components/AnimatedTabs";
 
 export default function Home() {
   return (
@@ -53,6 +59,48 @@ export default function Home() {
           description="SVG path morphing with spring-based transitions between geometric forms."
         >
           <MorphingShapes />
+        </DemoCard>
+
+        <DemoCard
+          title="Path Drawing"
+          description="SVG stroke animation using pathLength for a draw-on reveal effect."
+        >
+          <PathDrawing />
+        </DemoCard>
+
+        <DemoCard
+          title="Magnetic Hover"
+          description="Buttons that follow your cursor within a magnetic radius using spring physics."
+        >
+          <MagneticHover />
+        </DemoCard>
+
+        <DemoCard
+          title="Drag to Reorder"
+          description="Sortable list with automatic layout animation on reorder."
+        >
+          <DragReorder />
+        </DemoCard>
+
+        <DemoCard
+          title="3D Flip Cards"
+          description="Perspective-based card flip with spring transitions on click."
+        >
+          <FlipCard />
+        </DemoCard>
+
+        <DemoCard
+          title="Elastic Counter"
+          description="Numbers that spring between values with physics-based interpolation."
+        >
+          <ElasticCounter />
+        </DemoCard>
+
+        <DemoCard
+          title="Animated Tabs"
+          description="Sliding tab indicator using shared layoutId for seamless transitions."
+        >
+          <AnimatedTabs />
         </DemoCard>
 
         <DemoCard
