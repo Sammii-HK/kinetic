@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kinetic
 
-## Getting Started
+An interactive showcase of spring physics, layout animations, and gesture-driven interactions built with Framer Motion.
 
-First, run the development server:
+![Kinetic](public/screenshot.png)
+
+## Demos
+
+25 interactive demos covering core Framer Motion concepts:
+
+- **Spring Physics** -- draggable ball with real-time stiffness, damping, and mass controls
+- **Layout Shuffle** -- shared layout animations with click-to-expand
+- **Gesture Cards** -- swipe-to-dismiss deck with velocity detection
+- **Stagger Reveal** -- orchestrated entrance animations with four variants
+- **Morphing Shapes** -- SVG path morphing with matched bezier segments
+- **Path Drawing** -- SVG stroke animation using pathLength
+- **Magnetic Hover** -- cursor-following buttons with spring physics
+- **Drag to Reorder** -- sortable list with layout animation
+- **3D Flip Cards** -- perspective card flip with spring transitions
+- **Elastic Counter** -- spring-interpolated number animation
+- **Animated Tabs** -- sliding indicator with shared layoutId
+- **Countdown Ring** -- circular progress with spring-animated timer
+- **Particle Burst** -- click-triggered particle explosions
+- **Accordion** -- collapsible sections with height animation
+- **Text Scramble** -- character-by-character text resolve effect
+- **Cursor Trail** -- rainbow trail with staggered spring delay
+- **Progress Steps** -- multi-step bar with spring transitions
+- **Floating Dock** -- macOS-style dock with proximity scale
+- **Typewriter** -- character-by-character text with blinking cursor
+- **Notification Stack** -- toast notifications with auto-dismiss
+- **Spotlight Card** -- cursor-following radial gradient
+- **Infinite Marquee** -- seamless looping ticker
+- **Gravity Balls** -- drop and bounce with squash and stretch
+- **Animated Border** -- rotating conic gradient border
+- **Scroll Parallax** -- multi-layer parallax with useScroll
+
+## Tech stack
+
+- Next.js 16 (App Router)
+- Framer Motion 12
+- Tailwind CSS 4
+- TypeScript
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Licence
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
