@@ -4,7 +4,7 @@ import { motion, useSpring, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 
 function AnimatedDigit({ value }: { value: number }) {
-  const spring = useSpring(0, { stiffness: 100, damping: 20, mass: 0.5 });
+  const spring = useSpring(0, { stiffness: 200, damping: 30, restDelta: 0.5 });
   const display = useTransform(spring, (v) => Math.round(v).toLocaleString());
 
   useEffect(() => {
