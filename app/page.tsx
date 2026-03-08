@@ -11,6 +11,13 @@ import DragReorder from "./components/DragReorder";
 import FlipCard from "./components/FlipCard";
 import ElasticCounter from "./components/ElasticCounter";
 import AnimatedTabs from "./components/AnimatedTabs";
+import CountdownRing from "./components/CountdownRing";
+import ParticleBurst from "./components/ParticleBurst";
+import Accordion from "./components/Accordion";
+import TextScramble from "./components/TextScramble";
+import CursorTrail from "./components/CursorTrail";
+import ProgressSteps from "./components/ProgressSteps";
+import FloatingDock from "./components/FloatingDock";
 
 export default function Home() {
   return (
@@ -101,6 +108,55 @@ export default function Home() {
           description="Sliding tab indicator using shared layoutId for seamless transitions."
         >
           <AnimatedTabs />
+        </DemoCard>
+
+        <DemoCard
+          title="Countdown Ring"
+          description="Circular progress ring with spring-animated countdown timer."
+        >
+          <CountdownRing />
+        </DemoCard>
+
+        <DemoCard
+          title="Particle Burst"
+          description="Click anywhere to spawn an explosion of physics-driven particles."
+        >
+          <ParticleBurst />
+        </DemoCard>
+
+        <DemoCard
+          title="Accordion"
+          description="Collapsible sections with spring-animated height transitions."
+        >
+          <Accordion />
+        </DemoCard>
+
+        <DemoCard
+          title="Text Scramble"
+          description="Characters scramble through random glyphs before resolving into the target word."
+        >
+          <TextScramble />
+        </DemoCard>
+
+        <DemoCard
+          title="Cursor Trail"
+          description="Rainbow trail of circles following the cursor with staggered spring delay."
+        >
+          <CursorTrail />
+        </DemoCard>
+
+        <DemoCard
+          title="Progress Steps"
+          description="Multi-step progress bar with spring-animated transitions between stages."
+        >
+          <ProgressSteps />
+        </DemoCard>
+
+        <DemoCard
+          title="Floating Dock"
+          description="macOS-style dock with proximity-based scale using spring physics."
+        >
+          <FloatingDock />
         </DemoCard>
 
         <DemoCard
