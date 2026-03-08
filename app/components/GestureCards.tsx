@@ -32,12 +32,14 @@ function Card({
       style={{ x, rotate, opacity, ...style }}
       onDragEnd={(_, info) => {
         if (Math.abs(info.velocity.x) > 300 || Math.abs(info.offset.x) > 120) {
+          const direction = info.offset.x > 0 ? 1 : -1;
+          x.set(direction * 300);
           onDismiss();
         }
       }}
       initial={{ scale: 0.95, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
-      exit={{ x: 300, opacity: 0, transition: { duration: 0.2 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
       className="absolute w-56 h-72 rounded-2xl cursor-grab active:cursor-grabbing flex items-center justify-center shadow-2xl"
       whileTap={{ scale: 1.02 }}
     >
