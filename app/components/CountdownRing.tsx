@@ -6,7 +6,7 @@ import { useState, useEffect, useCallback } from "react";
 export default function CountdownRing() {
   const [duration, setDuration] = useState(10);
   const [running, setRunning] = useState(false);
-  const progress = useSpring(1, { stiffness: 50, damping: 20 });
+  const progress = useSpring(1, { stiffness: 50, damping: 20, restDelta: 0.005 });
   const display = useTransform(progress, (v) => Math.ceil(v * duration));
   const strokeDashoffset = useTransform(progress, (v) => 283 * (1 - v));
 
