@@ -43,7 +43,7 @@ export default function CursorTrail() {
 
   return (
     <div
-      className="w-full h-full relative overflow-hidden cursor-none"
+      className="w-full h-full relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
